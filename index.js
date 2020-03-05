@@ -51,3 +51,13 @@ fs.outputFileSync(
     fileText,
     { encoding: 'utf-8' }
 )
+
+const exec = require('child_process').exec;
+exec('git add . && git commit -n -m "update readme"', function(err,stdout,stderr) {
+    if(err) {
+        console.log('error', err)
+        return
+    }
+    console.log('stdout', stdout)
+    console.log('stderr', stderr)
+});
