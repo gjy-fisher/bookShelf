@@ -53,7 +53,7 @@ fs.outputFileSync(
 )
 
 const exec = require('child_process').exec;
-exec('git log --pretty=format:"%s" -n 1 | xargs -I message git commit -n --amend -m message', function(err,stdout,stderr) {
+exec('git add .', function(err,stdout,stderr) {
     if(err) {
         console.log('error', err)
         return
