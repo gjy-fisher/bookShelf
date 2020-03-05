@@ -1,0 +1,27 @@
+{
+  "name": "book-shelf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "record": "node ./index.js"
+  },
+  "pre-commit": "record",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjy-fisher/bookShelf.git"
+  },
+  "author": "gjy.fisher@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gjy-fisher/bookShelf/issues"
+  },
+  "homepage": "https://github.com/gjy-fisher/bookShelf#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0"
+  }
+}
